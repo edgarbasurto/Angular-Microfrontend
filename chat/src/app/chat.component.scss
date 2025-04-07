@@ -1,0 +1,56 @@
+.content {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--content-bg-color);
+    color: var(--transparent-fg-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-rooms__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: var(--field-bg-color); // Usando la variable de campo
+    color: var(--text-font-size); // Usando la variable de texto
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.chat-rooms__list:hover {
+    background-color: var(--hover-fg-color); // Usando la variable de hover
+    color: var(--selected-colored-fg-color); // Usando la variable de color seleccionado
+}
+
+.chat-rooms__card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+    height: 40px;
+    background-color: var(--avatar-bg-color); // Usando la variable de avatar
+    color: var(--colored-fg-color); // Usando la variable de color general
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0.5rem 100px;
+    padding: 0.5rem;
+}
+
+.chat-rooms__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    height: 3rem;
+    color: var(--title-font-size); // Usando la variable de título
+}

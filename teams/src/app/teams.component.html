@@ -1,0 +1,29 @@
+<div class="content">
+    <div>
+        <h1>Teams Application</h1>
+        <p>Welcome to the teams application. Please select a team to start chatting.</p>
+        <div class="teams__container">
+            <h2>Teams</h2>
+            <ul class="teams__list">
+                <!-- agregar estilos para escoger chatrooms -->
+                <li *ngFor="let team of teams" class="teams__card" (click)="selectTeam(team)">
+                    {{ team.name }}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="team__details" *ngIf="selectedTeam">
+        <h2>Team Details</h2>
+        <p>Name: {{ selectedTeam.name }}</p>
+        <p>Description: {{ selectedTeam.description }}</p>
+        <button (click)="goBack()">Back to Teams</button>
+        <div class="team__members">
+            <h3>Members</h3>
+            <ul>
+                <li *ngFor="let member of selectedTeam.members">
+                    {{ member.name }}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
