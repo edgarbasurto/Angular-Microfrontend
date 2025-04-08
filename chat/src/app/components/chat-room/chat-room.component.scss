@@ -54,9 +54,9 @@ form input {
     height: 100%;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    border: 1px solid var(--sidebar-bg-color); // Variable de fondo del sidebar
-    background-color: var(--field-bg-color); // Variable de fondo del campo
-    color: var(--text-font-size); // Variable de tamaño de fuente del texto
+    border: 1px solid var(--sidebar-bg-color);
+    background-color: var(--field-bg-color);
+    color: var(--text-font-size);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -65,14 +65,15 @@ form button {
     height: 100%;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    border: 1px solid var(--toolbar-bg-color); // Variable de fondo de la barra de herramientas
-    background-color: var(--toolbar-bg-color); // Variable de fondo del botón
-    color: var(--colored-fg-color); // Variable de color general
+    border: 1px solid var(--toolbar-bg-color);
+    background-color: var(--toolbar-bg-color);
+    color: var(--primary-colored-color);
+    font-weight: bolder;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 form button:hover {
-    background-color: var(--hover-fg-color); // Variable de fondo al pasar el cursor
-    color: var(--selected-colored-fg-color); // Variable de color de texto seleccionado
+    background-color: var(--button-hover-bg-color);
+    color: var(--text-font-size);
 }
 
 
@@ -84,8 +85,8 @@ form button:hover {
     width: 100%;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    background-color: var(--avatar-bg-color); // Variable de fondo del avatar
-    color: var(--colored-fg-color); // Variable de color general
+    background-color: var(--avatar-bg-color);
+    color: var(--colored-fg-color);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s ease, color 0.3s ease;
     margin: 0.5rem 0;

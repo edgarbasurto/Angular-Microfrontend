@@ -24,6 +24,11 @@ $chat-theme-map: (
     // Field
     #{$--field-bg-color}: #4A4A4A,
 
+    // Button
+    #{$--button-bg-color}: #f4b701,
+    #{$--button-hover-bg-color}: #a07800,
+    #{$--primary-colored-color}: #000,
+
     // Avatar
     #{$--avatar-size}: 2.188rem,
     #{$--avatar-font-size}: 1.25rem,

@@ -18,15 +18,15 @@
     width: 100%;
     height: 100%;
     overflow-y: auto;
-    background-color: var(--field-bg-color); // Usando la variable de campo
-    color: var(--text-font-size); // Usando la variable de texto
+    background-color: var(--field-bg-color);
+    color: var(--text-font-size);
     border-radius: 0.5rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 .chat-rooms__list:hover {
-    background-color: var(--hover-fg-color); // Usando la variable de hover
-    color: var(--selected-colored-fg-color); // Usando la variable de color seleccionado
+    background-color: var(--hover-fg-color);
+    color: var(--selected-colored-fg-color);
 }
 
 .chat-rooms__card {
@@ -37,8 +37,8 @@
     align-items: center;
     min-width: 150px;
     height: 40px;
-    background-color: var(--avatar-bg-color); // Usando la variable de avatar
-    color: var(--colored-fg-color); // Usando la variable de color general
+    background-color: var(--avatar-bg-color);
+    color: var(--colored-fg-color);
     border-radius: 0.5rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -52,5 +52,5 @@
     align-items: center;
     padding: 0 1rem;
     height: 3rem;
-    color: var(--title-font-size); // Usando la variable de título
+    color: var(--title-font-size);
 }

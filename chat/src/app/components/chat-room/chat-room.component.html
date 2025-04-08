@@ -3,8 +3,6 @@
     <div class="chat-header">
         <h2>Chat Room</h2>
     </div>
-    <a href="./menu">MENU</a>
-        <a href="./chatroom">CHAT</a>
     <div class="chat-messages" #scrollContainer>
         <div *ngFor="let message of chatRoomMessages"
             [ngClass]="{'my-message': message.sender === 'me', 'other-message': message.sender !== 'me'}">

@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router, NavigationExtras } from '@angular/router';
 
 @Component({
   selector: 'app-chat',
@@ -11,7 +11,10 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ChatComponent {
   //agregar router al contructor
-  constructor(private router: Router, private route: ActivatedRoute) { }
+  constructor(
+  ) { }
+ //private readonly route = inject(ActivatedRoute);
+  private readonly router = inject(Router);
 
   //crear los chatrooms
   chatRooms: { name: string; id: number }[] = [
@@ -31,7 +34,7 @@ export class ChatComponent {
 
   selectRoom(chatRoom: { name: string; id: number }) {
     this.selectedChatRoom = chatRoom;
-    this.router.navigate(['chatroom']);
+    this.router.navigate(['/chatroom']);
   }
 
   // Define a property to hold the chat messages

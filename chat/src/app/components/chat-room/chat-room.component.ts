@@ -40,7 +40,7 @@ export class ChatRoomComponent implements OnInit {
     this.messageText = '';
   }
   localStorage.setItem('chatRoomMessages', JSON.stringify(this.chatRoomMessages));
-  this.chatRoomMessages = JSON.parse(localStorage.getItem('chatRoomMessages') || '[]');
+  this.chatRoomMessages = JSON.parse(localStorage.getItem('chatRoomMessages') ?? '[]');
 }
  
  receiveMessage(sender: string, text: string) {
