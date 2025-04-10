@@ -2,6 +2,9 @@
 <div class="content">
     <div class="chat-header">
         <h2>Chat Room</h2>
+        <a class="btn-exit" [routerLink]="['menu']">
+            <i class="pi pi-sign-out"></i>
+        </a>
     </div>
     <div class="chat-messages" #scrollContainer>
         <div *ngFor="let message of chatRoomMessages"

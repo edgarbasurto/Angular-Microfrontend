@@ -1,18 +1,18 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-chat-room',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RouterModule],
   templateUrl: './chat-room.component.html',
   styleUrls: ['./chat-room.component.scss']
 })
 export class ChatRoomComponent implements OnInit {
   constructor() { }
   ngOnInit(): void {
-    // Initialize chat room messages from local storage
     const storedMessages = localStorage.getItem('chatRoomMessages');
     if (storedMessages) {
       this.chatRoomMessages = JSON.parse(storedMessages);
@@ -28,10 +28,8 @@ export class ChatRoomComponent implements OnInit {
  @Input() chatRoomMessages: { sender: string; text: string }[] | null = null;
  @Input() chatRoomLastMessage: { sender: string; text: string } | null = null;
  @Input() chatRoomFirstMessage: { sender: string; text: string } | null = null;  
-
  
  messageText: string = '';
-
 
  sendMessage(event: Event) {
   event.preventDefault();

@@ -106,3 +106,14 @@ form button:hover {
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.btn-exit{
+    background-color: var(--toolbar-bg-color);
+    color: var(--primary-colored-color);
+    font-weight: bolder;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0.5rem 0;
+    padding: 0.5rem 20px;
+    border-radius: 0.5rem;
+    border: 1px solid var(--toolbar-bg-color);;
+}

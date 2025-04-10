@@ -1,0 +1,16 @@
+<div class="content">
+    <div>
+        <h1>Chat Application</h1>
+        <p>Welcome to the chat application. Please select a chat room to start chatting.</p>
+        <div>
+            <h2 class="chat-rooms__header">Chat Rooms</h2>
+            <ul class="chat-rooms__list">
+                <!-- agregar estilos para escoger chatrooms -->
+
+                <li *ngFor="let room of chatRooms" class="chat-rooms__card" (click)="selectRoom(room)">
+                    {{ room.name }}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
